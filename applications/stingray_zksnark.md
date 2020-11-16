@@ -14,32 +14,32 @@ Stringray is a zero-knowledge proof framework for Polkadot.
 
 zkSNARK (zero-knowledge Succinct Non-interactive Argument of Knowledge) has been adopted increasingly to protect privacy and speed up transactions in decentralized ledger systems. 
 
-Stingray is zkSNARK framework developed by [Manta Network](www.manta.network) team to make ease of Polkadot developers to integate zero-knowldge proof to their projects.
+Stingray is zkSNARK framework developed by [Manta Network](www.manta.network) team to make ease of Polkadot developers to integrate zero-knowledge proof to their projects.
 
-Stingray will based on the popular [Groth16](https://eprint.iacr.org/2016/260.pdf) scheme, which is the most efficient zkSNARK constrcution to date. Stringray will allow Polkadot developers easily generate prover and the verifier (as a substrate) with from our standard gadgets that covers many popular applications.
+Stingray is based on the popular [Groth16](https://eprint.iacr.org/2016/260.pdf) scheme, which is the most efficient zkSNARK construction to date. Stringray will allow Polkadot developers to easily generate the prover and verifier (as a substrate) from standard gadgets that cover many popular applications.
 
-Our own team will be the initial user of Stringray to create a private assets and decentralized exchange framework on Polkadot.
+Our own team will be the initial user of Stringray to create private assets and a decentralized exchange framework on Polkadot.
 
 ### Project Details 
 
-Stringray will provide a rust library that allows Polkadot developer could easily prototype and deploy zkSNARK based parachain substrates. Stringray framework include:
+Stringray will provide a Rust library that allows Polkadot developers to easily prototype and deploy zkSNARK-based parachain substrates. The Stringray framework will include:
 
-* a series of gadget including hash, signature, and authenticated dictionaries for common building blocks.
-* a programming interface that allows developers to combine these gadgets to build the zkSNARK statement.
-* generating a offline prover and verifier substrates from the zkSNARK statement.
-* a working demo and documentation to illustrate how to use Stingray
+* a series of gadgets including hash, signature, and authenticated dictionaries for common building blocks;
+* a programming interface that allows developers to combine those gadgets to build the zkSNARK statement;
+* generation of offline prover and verifier substrates from the zkSNARK statement;
+* a working demo and documentation to explain how to use Stingray.
 
-Currently, we plan to implement/adapt the following gadget to Stignray:
+Currently, we plan to implement/adapt the following gadgets to Stingray:
 * BLS signature
 * Pedersen Hash
-* Merkle Patricia trie
+* Merkle Patricia Trie
 
-Stringray will leverage existing Web3 Foundation [BLS Curve](https://github.com/w3f/bls) and existing zkSNARK library such as 
-[LibZexe](https://github.com/scipr-lab/zexe) as building blocks, focus on building programming abstractions and libraries that lower the entry barrier of deploying zkSNARK to Polkadot.
+Stringray will leverage the existing Web3 Foundation [BLS Curve](https://github.com/w3f/bls) and zkSNARK libraries such as 
+[LibZexe](https://github.com/scipr-lab/zexe) as building blocks, and focus on building programming abstractions and libraries that lower the entry barrier of deploying zkSNARK to Polkadot.
 
 
 ### Ecosystem Fit 
-One similar project to ours is [Stark Network](https://github.com/w3f/Open-Grants-Program/blob/master/applications/starks_network.md). The major difference is that we use the more efficient Groth16 scheme. There are pros and cons in both schemes. Below are the detailed comparisions:
+One similar project to ours is [Stark Network](https://github.com/w3f/Open-Grants-Program/blob/master/applications/starks_network.md). The major difference is that Stingray will use the more efficient Groth16 scheme. There are pros and cons in both schemes. Below are the detailed comparisions:
 
 |                                       | SNARKs                     | STARKs                        | 
 | ------------------------------------: | -------------------------: | ----------------------------: | 
@@ -53,15 +53,15 @@ One similar project to ours is [Stark Network](https://github.com/w3f/Open-Grant
 | Post-quantum secure                   | NO :unamused:              | YES :smile:                   | 
 | Crypto assumptions                    | Strong :unamused:          | Collision resistant hashes :smile: |
 
-The major advantage of Groth16 is the very low verification cost and small proof size. Since the verification need to be done on chain, this is a huge advantage both in terms of performance and gas cost. However, Groth16 requires a more expensive trusted setup while STARKs don't require any setup. We think the trusted setup is a one-time cost and for most blockchain applications, it is worth paying this one-time cost. We have a future plan to add a ceremony library like the one used in ZCash to make the trusted setup easier.
+The major advantage of Groth16 is the very low verification cost and small proof size. Since the verification needs to be done on chain, that is a huge advantage both in terms of performance and gas cost. However, Groth16 requires a more expensive trusted setup while STARKs doesn't require setup. We think the trusted setup is a one-time cost and for most blockchain applications, it is worth paying. We have a future plan to add a ceremony library like the one used in ZCash to make the trusted setup easier.
 
 
 ## Team :busts_in_silhouette:
 
 ### Team members
-* Shumo Chu: Assistant Professor at UCSB. He obtained his Ph.D. in Computer Science from University of Washington. He was an research scientist in Algorand working on smart contract runtime and verification. 
+* Shumo Chu: Assistant Professor at UCSB. He obtained his Ph.D. in Computer Science from University of Washington. He was a research scientist in Algorand working on smart contract runtime and verification. 
 * Zhenfei Zhang: Zhenfei obtained his Ph.D. in computer at University of Wollongong, Australia. He was the director of cryptographic research at OnBoard Security, and a cryptographic engineer at Algorand.
-* Qiudong  Xia: received the B.S. degree from the Department of Information Security, University of Science and Technology of China (USTC), in 2018. He is currently pursuing the master's degree in information security from the Department of Electronic Engineering and Information Science (EEIS), USTC. His research interests include architecture design and security protection.
+* Qiudong  Xia: received the B.S. degree from the Department of Information Security, University of Science and Technology of China (USTC), in 2018. He is currently pursuing a master's degree in information security from the Department of Electronic Engineering and Information Science (EEIS), USTC. His research interests include architecture design and security protection.
 
 
 ### Team Website	
@@ -71,7 +71,7 @@ The major advantage of Groth16 is the very low verification cost and small proof
 BVI company.
 
 ### Team's experience
-All team members have extensive experience in distributed systems, cryptocurrencies and applied cryptography. Shumo had been working on distributed database systems, smart contract runtime and verification, and published more than 10 papers in database systems, formal methods.Zhenfei has published over 25 papers in cryptography; contributed to multiple proposals to NIST post-quantum cryptography competition; and co-drafted the BLS IETF Internet-draft. Qiudong has been working actively on access control and security of networking systems.
+All team members have extensive experience in distributed systems, cryptocurrencies and applied cryptography. Shumo had been working on distributed database systems, smart contract runtime and verification, and published more than 10 papers in database systems and formal methods. Zhenfei has published over 25 papers in cryptography; contributed to multiple proposals to the NIST post-quantum cryptography competition; and co-drafted the BLS IETF Internet-draft. Qiudong has been working actively on access control and security of networking systems.
 
 
 ### Team Code Repos
@@ -86,7 +86,7 @@ All team members have extensive experience in distributed systems, cryptocurrenc
 
 
 ### Overview
-* **Total Estimated Duration:** 2 month
+* **Total Estimated Duration:** 2 months
 * **Full-time equivalent (FTE):**  2 
 * **Total Costs:** 2 BTC
 
@@ -98,9 +98,9 @@ All team members have extensive experience in distributed systems, cryptocurrenc
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
 | 0a. | License | Apache 2.0 |
-| 1. | Rust Crate: Stingray | We will create Stingray Rust crate that contains the programming interface, common gadget and prover/verifier generation tool  |
-| 2. | Substrate module: example verifier | We will create a Substrate module that generated by our framework to demonstrate the effectiveness and efficiency of Stringray |
-| 3. | Docker | We will provide a dockerfile to demonstrate the end to end pipeline of Stingray. |
+| 1. | Rust Crate: Stingray | We will create the Stingray Rust Crate that contains the programming interface, common gadgets and prover/verifier generation tool  |
+| 2. | Substrate module: example verifier | We will create a Substrate module that is generated by our framework to demonstrate the effectiveness and efficiency of Stringray |
+| 3. | Docker | We will provide a dockerfile to demonstrate the end-to-end pipeline of Stingray. |
 
 ### Milestone 2 — Wrapup, Documentation and Demonstration
 
@@ -111,24 +111,24 @@ All team members have extensive experience in distributed systems, cryptocurrenc
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
 | 0a. | License | Apache 2.0 |
-| 0b. | Documentation | We will provide a detailed documentation of how to use stingray as a developer, including a documentation on the programming interface, how to generate prover/verifier, how to perform trusted setup, how to package verifier to a substrate module and deploy. |
-| 0c. | Testing | We will add unit tests for stingray that achieves at least 60% coverage and integrate it into the continuous integration process. | 
-| 1. | Benchmark | We will provide a performance study of Stingray and a guide for developer how to achieve best performance using Stringray. We will also add the benchmark as part of the regression test suite. |
-| 2. | Docker | We will provide a dockerfile to demonstrate end to end pipeline of Stingray with 3 different use case examples. |
+| 0b. | Documentation | We will provide a detailed documentation of how to use stingray as a developer, including a documentation on the programming interface, how to generate a prover/verifier, how to perform trusted setup, and how to verify a package to a substrate module and deploy. |
+| 0c. | Testing | We will add unit tests for Stingray that achieve at least 60% coverage and add them into the continuous integration process. | 
+| 1. | Benchmark | We will provide a performance study of Stingray and a guide for developers on how to achieve the best performance using Stringray. We will also add the benchmark as part of the regression test suite. |
+| 2. | Docker | We will provide a dockerfile to demonstrate the end-to-end pipeline of Stingray with 3 different use case examples. |
 
 ### Community engagement
 
-As part of the Program, we plan to publish serveral medium articles/tutorials:
+As part of the Program, we plan to publish several Medium articles/tutorials:
 * general introductions to zkSNARKs
 * design/architecture of Stingray
-* tutorial of using Stringray to develop privacy preserving app in Polkadot
+* tutorial of using Stringray to develop a privacy-preserving app in Polkadot
 
 ## Future Plans
 
-Stingray is part of [Manta](https://manta.network) project. We plan to keep adding new features to Stingray, including:
-* a ceremony tool to do decentralized trusted setup using MPC (secure multi-party computation)
+Stingray is part of the [Manta](https://manta.network) project. We plan to keep adding new features to Stingray, including:
+* a ceremony tool to do decentralized trusted setup using SMPC (secure multi-party computation)
 * gadgets covering more applications
-* lead a community effort to create a open standard for DApp using zkSNARK on Polkadot
+* leading a community effort to create an open standard for DApps using zkSNARK on Polkadot
 
 ## Additional Information :heavy_plus_sign: 
 
