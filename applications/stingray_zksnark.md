@@ -4,7 +4,7 @@
 
 * **Project:** Stingray zkSNARK
 * **Proposer:** [Manta-Network](https://github.com/Manta-Network)
-* **Payment Address:** TBD. 
+* **Payment Address:** bc1q0stg9s4khl5edh0e4vaua9gvr2kkltax0kj52a
 
 
 
@@ -40,7 +40,7 @@ Stringray will leverage existing Web3 Foundation [BLS Curve](https://github.com/
 
 
 ### Ecosystem Fit 
-One similar project to ours is [Stark Network](https://github.com/w3f/Open-Grants-Program/blob/master/applications/starks_network.md). The major difference is that we use the more efficient Groth16 scheme. There are pros and cons in both scheme, below is the detailed comparision:
+One similar project to ours is [Stark Network](https://github.com/w3f/Open-Grants-Program/blob/master/applications/starks_network.md). The major difference is that we use the more efficient Groth16 scheme. There are pros and cons in both schemes. Below are the detailed comparisions:
 
 |                                       | SNARKs                     | STARKs                        | 
 | ------------------------------------: | -------------------------: | ----------------------------: | 
@@ -54,16 +54,16 @@ One similar project to ours is [Stark Network](https://github.com/w3f/Open-Grant
 | Post-quantum secure                   | NO :unamused:              | YES :smile:                   | 
 | Crypto assumptions                    | Strong :unamused:          | Collision resistant hashes :smile: |
 
-The major advantage of Groth16 is the low verification cost and small proof size. Since the verification need to be done on chain, 
-this is a huge benefit both in terms of performance and gas cost. However, Groth16 requires a more expensive trusted setup. We think the trusted setup is a one-time cost and for most blockchain applications, it is worth paying this one-time cost. We have a future plan to add a ceremony library like the one used in ZCash to make the trusted setup easier.
+The major advantage of Groth16 is the very low verification cost and small proof size. Since the verification need to be done on chain, this is a huge advantage both in terms of performance and gas cost. However, Groth16 requires a more expensive trusted setup while STARKs don't require any setup. We think the trusted setup is a one-time cost and for most blockchain applications, it is worth paying this one-time cost. We have a future plan to add a ceremony library like the one used in ZCash to make the trusted setup easier.
 
 
 ## Team :busts_in_silhouette:
 
 ### Team members
 * Shumo Chu: Assistant Professor at UCSB. He obtained his Ph.D. in Computer Science from University of Washington. He was an research scientist in Algorand working on smart contract runtime and verification. 
-* Zhenfei Zhang: Independent Researcher. TBD.
-* Qiudong Xia: Master student at University of Science and Technology of China. TBD.
+* Zhenfei Zhang: Zhenfei obtained his Ph.D. in computer at University of Wollongong, Australia. He was the director of cryptographic research at OnBoard Security, and a cryptographic engineer at Algorand.
+* Qiudong  Xia: received the B.S. degree from the Department of Information Security, University of Science and Technology of China (USTC), in 2018. He is currently pursuing the master's degree in information security from the Department of Electronic Engineering and Information Science (EEIS), USTC. His research interests include architecture design and security protection.
+
 
 ### Team Website	
 * https://manta.network
@@ -72,8 +72,7 @@ this is a huge benefit both in terms of performance and gas cost. However, Groth
 BVI company.
 
 ### Team's experience
-All team members have extensive experience in distributed systems, cryptocurrencies and applied cryptography. Shumo had been working on distributed database systems, smart contract runtime and verification, and published more than 10 papers in database systems, formal methods. Zhenfei has published more than XX papers in cryptography and was the co-author of NIST post-quantum signature competition. Qiudong Xia has been working on security in computer networking XXXX. 
-
+All team members have extensive experience in distributed systems, cryptocurrencies and applied cryptography. Shumo had been working on distributed database systems, smart contract runtime and verification, and published more than 10 papers in database systems, formal methods.Zhenfei has published over 25 papers in cryptography; contributed to multiple proposals to NIST post-quantum cryptography competition; and co-drafted the BLS IETF Internet-draft. Qiudong has been working actively on access control and security of networking systems.
 
 
 ### Team Code Repos
@@ -81,10 +80,10 @@ All team members have extensive experience in distributed systems, cryptocurrenc
 
 ### Team LinkedIn Profiles
 * https://www.linkedin.com/in/shumo-chu-a1722416/
-* https://www.linkedin.com/<person_2>
+* https://www.linkedin.com/in/zhenfeizhang/
+* https://www.linkedin.com/in/qiudong-xia-2935761aa
 
 ## Development Roadmap :nut_and_bolt: 
-
 
 
 ### Overview
@@ -129,7 +128,8 @@ As part of the Program, we plan to publish serveral medium articles/tutorials:
 
 Stingray is part of [Manta](https://manta.network) project. We plan to keep adding new features to Stingray, including:
 * a ceremony tool to do decentralized trusted setup using MPC (secure multi-party computation)
-* 
+* gadgets covering more applications
+* lead a community effort to create a open standard for DApp using zkSNARK on Polkadot
 
 ## Additional Information :heavy_plus_sign: 
 
