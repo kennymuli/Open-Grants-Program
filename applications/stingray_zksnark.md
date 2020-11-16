@@ -3,9 +3,8 @@
 > This document is referenced in the terms and conditions and therefore needs to contain all the required information. Don't remove any of the mandatory parts presented in bold letters or as headlines! See the [Open Grants Program Process](https://github.com/w3f/Open-Grants-Program/blob/master/README_2.md) on how to submit a proposal.
 
 * **Project:** Stingray zkSNARK
-* **Proposer:** [Manta-Network](https://github.com/Manta-Network)
-* **Payment Address:** bc1q0stg9s4khl5edh0e4vaua9gvr2kkltax0kj52a
-
+* **Proposer:** [Manta-Network](https://github.com/Manta-Network/Manta-Whitepaper/blob/main/manta-whitepaper.pdf)
+* **Payment Address:** bc1qcnghrzsfwnnv5fuh8095a6g3cf820c9y7t432q
 
 
 ## Project Overview :page_facing_up: 
@@ -19,7 +18,7 @@ Stingray is zkSNARK framework developed by [Manta Network](www.manta.network) te
 
 Stingray will based on the popular [Groth16](https://eprint.iacr.org/2016/260.pdf) scheme, which is the most efficient zkSNARK constrcution to date. Stringray will allow Polkadot developers easily generate prover and the verifier (as a substrate) with from our standard gadgets that covers many popular applications.
 
-Our own team will be the initial user of Stringray to create a private assets and decentralized exchange framework on Polkadot.  
+Our own team will be the initial user of Stringray to create a private assets and decentralized exchange framework on Polkadot.
 
 ### Project Details 
 
@@ -66,7 +65,7 @@ The major advantage of Groth16 is the very low verification cost and small proof
 
 
 ### Team Website	
-* https://manta.network
+* https://github.com/Manta-Network/Manta-Whitepaper/blob/main/manta-whitepaper.pdf
 
 ### Legal Structure 
 BVI company.
